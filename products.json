@@ -1,0 +1,61 @@
+[
+    {
+        "id":1,
+        "name":" Double Patty Burger",
+        "price":"$200",
+        "image":"images/burger.png"
+    },
+    {
+"id":2, 
+"name": "ice cream",
+"price" :"$ 200",
+"image" :"images/fried-chicken.png"
+},
+{
+"id":3, 
+"name": "Vegroll",
+"price" :"$ 200",
+"image" :"images/icecream.png"
+},
+{
+"id":4, 
+"name": "Cupcake",
+"price" :"$ 200",
+"image" :"images/brownies.png"
+},
+{
+"id":5, 
+"name": "Pastry",
+"price" :"$ 200",
+"image" :"images/brownies.png"
+},{
+"id":6, 
+"name": " Hakka noodle",
+"price" :"$ 200",
+"image" :"images/burger.png"
+},
+{
+"id":7, 
+"name": "fried rice",
+"price" :"$ 200",
+"image" :"images/burger.png"
+},
+{
+"id":8, 
+"name": "spring roll",
+"price" :"$ 200",
+"image" :"images/biryani.webp"
+},
+{
+"id":9, 
+"name": "brownies",
+"price" :"$ 200",
+"image" :"images/brownies.png"
+},
+{
+"id":10, 
+"name": "cake",
+"price" :"$ 200",
+"image" :"images/brownies.png"
+}
+]
