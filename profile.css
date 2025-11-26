@@ -1,0 +1,28 @@
+body { margin:0; font-family:Poppins; background:#f7f7f7; transition:0.3s; }
+body.dark { background:#222; color:white; }
+
+
+.profile-container { max-width:750px; margin:auto; padding:20px; }
+.profile-card { background:white; padding:20px; border-radius:20px; box-shadow:0 5px 20px rgba(0,0,0,0.1); }
+body.dark .profile-card { background:#333; }
+
+
+.photo-section { text-align:center; }
+.photo-section img { width:130px; height:130px; border-radius:50%; object-fit:cover; }
+
+
+.profile-info input, .profile-info textarea, .profile-info select {
+width:100%; padding:10px; border:1px solid #ccc; border-radius:10px; margin-top:5px;
+}
+body.dark input, body.dark textarea, body.dark select {
+background:#444; color:white; border:1px solid #666;
+}
+
+
+.primary-btn { background:#ff7a00; color:white; padding:10px 20px; border:none; border-radius:10px; }
+.danger-btn { background:#e63939; color:white; padding:10px 20px; border:none; border-radius:10px; }
+.back-btn { margin-top:20px; width:100%; padding:12px; background:#444; color:white; border:none; border-radius:10px; }
+
+
+.order-list { background:white; padding:20px; border-radius:15px; }
+.order-item { padding:10px; border-bottom:1px solid #eee; }

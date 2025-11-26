@@ -1,0 +1,99 @@
+[
+    {
+        "id":1,
+        "name":" Double Patty Burger",
+        "price":"$14",
+        "image":"images/buger.jpg"
+    },
+    {
+"id":2, 
+"name": "Sandwich",
+"price" :"$12",
+"image" :"images/sandwich.jpg"
+},
+{
+"id":3, 
+"name": "Pasta",
+"price" :"$10",
+"image" :"images/pasta.jpg"
+},
+{
+"id":4, 
+"name": "Lasagna",
+"price" :"$18",
+"image" :"images/lasagna.webp"
+},
+{
+    "id":5,
+    "name":" Grill Sandwich",
+    "price":"$12",
+    "image":"images/sandwich.png"
+},
+{
+"id":6, 
+"name": "Cheese Pizza",
+"price" :"$18",
+"image" :"images/pizza.png"
+},
+{
+"id":7, 
+"name": "Spring-roll",
+"price" :"$12",
+"image" :"images/spring-roll.png"
+},
+{
+"id":8, 
+"name": "Spaghetti",
+"price" :"$10",
+"image" :"images/spaghetti.png"
+},
+{
+"id":9, 
+"name": "Hot dog",
+"price" :"$10",
+"image" :"images/Hot_dog.jpg"
+},
+{
+"id":10, 
+"name": "Pizza",
+"price" :"$16",
+"image" :"images/pizza.jpg"
+},
+{
+    "id":11,
+    "name":"Chocklate-Drink",
+    "price":"$10",
+    "image":"images/chocolate_Drink.jpg"
+},
+
+{
+    "id":12,
+    "name":"Briyani",
+    "price":"$12",
+    "image":"images/biryani.webp"
+},
+{
+    "id":13,
+    "name":"Cake",
+    "price":"$20",
+    "image":"images/cake.jpg"
+},
+{
+    "id":14,
+    "name":"Spanchi",
+    "price":"$10",
+    "image":"images/Spanchi.jpg"
+},
+{
+    "id":15,
+    "name":"Ice Creme",
+    "price":"$12",
+    "image":"images/ice_cream.jpg"
+},
+{
+    "id":16,
+    "name":"Juse",
+    "price":"$10",
+    "image":"images/juse.jpg"
+}
+]

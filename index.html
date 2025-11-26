@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Foodie Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <!--HEADER PART-->
+    <header>
+        <nav class="navbar flex between wrapper">
+            <a href="#" class="logo">Foodgy.</a>
+
+
+            <!--DEKSTOP MENU-->
+            <ul class="navlist flex gap-3">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="#service">Service</a>
+                </li>
+                <li>
+                    <a href="#about us">About Us</a>
+                </li>
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="#review">Reviews</a>
+                </li>
+                <li>
+                    <a href="#team">Team</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+
+
+            <div class="desktop-action flex gap-2">
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+                <a href="#" class="btn" id="mobileSignInBtn">
+                    Sign in <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+
+
+                <!-- Profile Dropdown (Visible After Login) -->
+                <div id="profileDropdown" class="profile-dropdown" style="display:none;">
+                    <button id="profileBtn" class="btn profile-btn">
+                        User <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="profile-menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="#" id="logoutBtn">Logout</a>
+                    </div>
+                </div>
+
+                <a href="#" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+            <!--MOBILE MENU-->
+
+            <ul class="mobile-menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Service</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+                <li>
+                    <a href="#" class="btn" id="mobileSignInBtn">
+                        Sign in
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--SECTIONS PART-->
+    <main>
+
+        <section id="home">
+
+            <div class="hero-section flex wrapper gap-4">
+                <div class="content">
+                    <h1>Enjoy Your Delicious
+                        <span>Food</span>
+                    </h1>
+                    <p class="para">
+                        We will fill your tummy with delicious<br> food with fast delivery.
+                    </p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn">Order Now</a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="image-container">
+                    <img src="images/FOODGY01.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="service">
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>Our Services</h5>
+                    <h2>How does it work?</h2>
+                </div>
+
+                <div class="flex text-center mt-4 gap-4">
+                    <div class=" service-card">
+                        <div class="image-container">
+                            <img src="images/easy-to-order.png">
+                        </div>
+                        <h3>Easy to Order</h3>
+                        <p>You only need a few steps in ordering food.</p>
+                    </div>
+                    <div class=" service-card">
+                        <div class="image-container">
+                            <img src="images/fast-delivery.png">
+                        </div>
+                        <h3>Fast delivery</h3>
+                        <p>Delivery that is always ontime even faster.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="image-container">
+                            <img src="images/best-quality.png">
+                        </div>
+                        <h3>Best Quality</h3>
+                        <p>Not only fast for us in quality is also number one. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>Our Menu</h5>
+                    <h2>The Most Popular</h2>
+                </div>
+
+                <div class="card-list text-center flex mt-4 gap-2">
+                    <!-- <div class="order-card">
+                        <div class="card-image">
+                            <img src="images/burger.png">
+                        </div>
+                        <h4>Double Patty Burger</h4>
+                        <h4 class="price">$20</h4>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="images/pizza.png">
+                        </div>
+                        <h4>Double Patty Burger</h4>
+                        <h4 class="price">$20</h4>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                    
+                -->
+
+                </div>
+
+
+                <!--Cart Table-->
+
+
+                <div class="cart-tab">
+                    <h3>Your Cart</h3>
+
+                    <div class="cart-list">
+
+                        <!--      <div class="item">
+                        <div class="item-image">
+                            <img src="images/burger.png">
+                        </div>
+                        <div>
+                            <h4>Double C Burger</h4>
+                            <h4 class="item-total">$200</h4>
+                        </div>
+                        <div class="flex">
+                            <h4 class="quantity-value">1</h4>
+                            <a href="#" class="quantity-btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </a>
+                            <a href="#" class="quantity-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                    </div> -->
+                    </div>
+
+                    <div class="total-container">
+                        <h4>Total</h4>
+                        <h4 class="cart-total">$0.00</h4>
+                    </div>
+
+                    <div class="btn-container">
+                        <a href="#" class="btn close-btn">Close</a>
+                        <a href="#" class="btn checkout-btn">Check</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="gallery">
+
+            <div>
+
+
+                <div class="gallary" id="Gallary">
+                    <h1>Our<span>Gallery</span></h1>
+
+                    <div class="gallary_image_box">
+                        <div class="gallary_image">
+                            <img src="images/gallary_1.jpg">
+
+                            <h3>Food</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="gallary_btn">Order Now</a>
+                        </div>
+
+                        <div class="gallary_image">
+                            <img src="images/gallary_2.jpg">
+
+                            <h3>Food</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="gallary_btn">Order Now</a>
+                        </div>
+
+                        <div class="gallary_image">
+                            <img src="images/gallary_3.jpg">
+
+                            <h3>Food</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="gallary_btn">Order Now</a>
+                        </div>
+
+                        <div class="gallary_image">
+                            <img src="images/gallary_4.jpg">
+
+                            <h3>Food</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="gallary_btn">Order Now</a>
+                        </div>
+
+                        <div class="gallary_image">
+                            <img src="images/gallary_5.jpg">
+
+                            <h3>Food</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="gallary_btn">Order Now</a>
+                        </div>
+
+                        <div class="gallary_image">
+                            <img src="images/gallary_6.jpg">
+
+                            <h3>Food</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="gallary_btn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="review">
+            <div class="wrapper p-top flex gap-3">
+                <div class="image-container">
+                    <img src="images/delivery-boy-with-phone.png">
+                </div>
+
+                <div class="review-container">
+                    <h5>Our Reviews</h5>
+                    <h2>What they say?</h2>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper mt-4">
+                            <div class="swiper-slide">
+                                <div class="flex gap-2">
+                                    <div class="profile">
+                                        <img src="images/profile1.jpeg">
+                                    </div>
+                                    <div>
+                                        <h4>Guy Hawkins</h4>
+                                    </div>
+
+                                    <div class="mt-half">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="para">Codechef is the best.Besides the many delicious the service is also
+                                    very
+                                    good,espacially very fast delivery. I highly recommend Codechef to you.</p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex gap-2">
+                                    <div class="profile">
+                                        <img src="images/profile3.jpeg">
+                                    </div>
+                                    <div>
+                                        <h4>Olivia Smith</h4>
+                                    </div>
+
+                                    <div class="mt-half">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="para">Delicious dishes,cozy ambiance,and exceptional service. A must-visit
+                                    for food lovers seeking bold flavors and unforgettable dining experiences.Highly
+                                    recommended,every bite delights!</p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex gap-2">
+                                    <div class="profile">
+                                        <img src="images/profile2.jpeg">
+                                    </div>
+                                    <div>
+                                        <h4>Sophia Anderson</h4>
+                                    </div>
+
+                                    <div class="mt-half">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="para">Fresh ingredients,creative menu,and warm service make this spot a
+                                    hidden
+                                    gem.Perfect for casual dinners or special nights out.Truly a Codechef paradise!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex between">
+                            <a href="#" class="arrow" id="prev">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </a>
+                            <a href="#" class="arrow" id="next">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about us">
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>Our subscribe</h5>
+                    <h2>Subscribe To Our Newsletter</h2>
+                    <p class="para m-auto">
+                        We recommand you to subscribe our newspaper,drop your email below to get daily update about us.
+                    </p>
+
+                    <label class="input-container flex">
+                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        <button id="subscribeBtn" class="btn" type="button">Subscribe</button>
+
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="team1">
+
+                <h1 class="team-heading">Our<span>Team</span></h1>
+
+                <div class="team-container">
+
+
+
+                    <div class="team-card reveal">
+                        <img src="images/my.jpg">
+                        <h3>Shivang Namdeo</h3>
+                        <p>Founder & Chef</p>
+                        <div class="team-socials">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+
+                    <div class="team-card reveal">
+                        <img src="images/sumit.jpg">
+                        <h3>Sumit Kumar Prajapati</h3>
+                        <p>Marketing Head</p>
+                        <div class="team-socials">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+
+                    <div class="team-card reveal">
+                        <img src="images/sarthsk.jpg">
+                        <h3>Sarthak Golhani</h3>
+                        <p>Operations Manager</p>
+                        <div class="team-socials">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--    <section id="order">
+            <div class="container">
+                <h2 class="section-title">Place an <span>Order</span></h2>
+                <div style="display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start;">
+                    <form id="orderForm" class="card" style="padding:18px">
+                        <div class="form-grid">
+                            <div>
+                                <label for="name" style="font-weight:600;font-size:14px">Name</label>
+                                <input id="name" name="name" required placeholder="Your name"
+                                    style="width:100%;padding:10px;border-radius:8px;border:1px solid #e5e7eb;margin-top:6px">
+                            </div>
+                            <div>
+                                <label for="phone" style="font-weight:600;font-size:14px">Phone</label>
+                                <input id="phone" name="phone" required placeholder="+91 98765 43210"
+                                    style="width:100%;padding:10px;border-radius:8px;border:1px solid #e5e7eb;margin-top:6px">
+                            </div>
+                            <div>
+                                <label for="email" style="font-weight:600;font-size:14px">Email</label>
+                                <input id="email" type="email" name="email" placeholder="you@mail.com"
+                                    style="width:100%;padding:10px;border-radius:8px;border:1px solid #e5e7eb;margin-top:6px">
+                            </div>
+                            <div>
+                                <label for="qty" style="font-weight:600;font-size:14px">Quantity</label>
+                                <input id="qty" type="number" min="1" value="1"
+                                    style="width:100%;padding:10px;border-radius:8px;border:1px solid #e5e7eb;margin-top:6px">
+                            </div>
+                            <div style="grid-column:1/3">
+                                <label for="orderitem" style="font-weight:600;font-size:14px">Order Item</label>
+                                <input id="orderitem" placeholder="e.g. Burger x2"
+                                    style="width:100%;padding:10px;border-radius:8px;border:1px solid #e5e7eb;margin-top:6px">
+                            </div>
+                            <div style="grid-column:1/3">
+                                <label for="address" style="font-weight:600;font-size:14px">Address</label>
+                                <textarea id="address" rows="3" placeholder="Delivery address"
+                                    style="width:100%;padding:10px;border-radius:8px;border:1px solid #e5e7eb;margin-top:6px"></textarea>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:12px;display:flex;gap:12px;justify-content:flex-end">
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                            <button type="reset" class="btn btn-ghost">Reset</button>
+                        </div>
+                    </form>
+
+                    <aside style="padding:18px">
+                        <div style="background:white;padding:18px;border-radius:12px;box-shadow:var(--card-shadow)">
+                            <h4 style="margin-top:0">Order Summary</h4>
+                            <p class="muted">Add items to see estimated cost. This is a demo — implement cart logic on
+                                backend for real totals.</p>
+                            <ul style="margin:12px 0;color:#374151">
+                                <li>Fast delivery</li>
+                                <li>Contactless options</li>
+                                <li>24/7 support</li>
+                            </ul>
+                            <a class="btn btn-primary" href="#menu">Browse Menu</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>-->
+
+
+
+    </main>
+
+    <!--FOOTER PART-->
+    <footer>
+
+        <div class="footer-container">
+            <div class="flex wrapper gap-4">
+                <div class="footer-wrapper">
+                    <a href="#" class="logo">Foodgy</a>
+                    <p class="mt-one-half">
+                        We will fill your tummy with delicious<br> food with fast delivery.
+                    </p>
+                    <div class="flex gap-2 mt-one-half">
+                        <a href="#" class="btn">Order Now</a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-wrapper">
+                    <li>
+                    <li>
+                        <h4>Our Menu</h4>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Special</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Popular</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Category</a>
+                    </li>
+                    </li>
+                </ul>
+                <ul class="footer-wrapper">
+                    <li>
+                    <li>
+                        <h4>Company</h4>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Why Codechef</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Partner with us</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">About us</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">FAQ's</a>
+                    </li>
+                    </li>
+                </ul>
+                <ul class="footer-wrapper">
+                    <li>
+                    <li>
+                        <h4>Support</h4>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Account</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Support center</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Feedback</a>
+                    </li>
+                    <li class="mt-one-half">
+                        <a href="#" class="footer-link">Contacts</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOGIN POPUP -->
+    <div id="loginPopup" class="login-popup">
+        <div class="login-box">
+            <h2>Sign In</h2>
+
+            <input type="email" id="loginEmail" placeholder="Enter your email">
+            <input type="password" id="loginPass" placeholder="Enter your password">
+
+            <button id="loginBtn" class="btn">Login</button>
+
+            <p class="close-login">Close</p>
+        </div>
+    </div>
+
+
+
+    <!-- SIGN IN / SIGN UP MODAL -->
+    <div id="authModal" class="auth-overlay">
+        <div class="auth-box">
+            <h2>Create Account</h2>
+
+            <form id="authForm">
+                <input type="text" id="authName" placeholder="Full Name" required>
+                <input type="email" id="authEmail" placeholder="Email Address" required>
+                <input type="tel" id="authPhone" placeholder="Phone Number" required>
+                <input type="password" id="authPass" placeholder="Password" required>
+
+                <button type="submit" class="auth-btn">Create Account</button>
+                <p class="auth-switch">Already have an account? <span id="switchLogin">Log in</span></p>
+            </form>
+
+            <form id="loginForm" style="display:none;">
+                <input type="email" id="loginEmail" placeholder="Email Address" required>
+                <input type="password" id="loginPass" placeholder="Password" required>
+
+                <button type="submit" class="auth-btn">Log In</button>
+                <p class="auth-switch">Don't have an account? <span id="switchSignup">Sign up</span></p>
+            </form>
+
+            <button class="auth-close">✕</button>
+        </div>
+    </div>
+
+
+    <script>
+        const reveals = document.querySelectorAll(".reveal");
+
+        function revealElements() {
+            for (let i = 0; i < reveals.length; i++) {
+                let windowHeight = window.innerHeight;
+                let revealTop = reveals[i].getBoundingClientRect().top;
+                let revealPoint = 120; // trigger point
+
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", revealElements);
+        revealElements(); // for immediate load
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+
+<!-- ADD THIS -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        speed: 600,
+        spaceBetween: 20,
+        slidesPerView: 1,
+
+        navigation: {
+            nextEl: "#next",
+            prevEl: "#prev",
+        },
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+
+
+</body>
+
+</html>

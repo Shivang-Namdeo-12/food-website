@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile</title>
+<link rel="stylesheet" href="profile.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+
+<div class="profile-container">
+<h2>My Profile</h2>
+
+
+<div class="profile-card">
+
+
+<!-- Profile Image Upload -->
+<div class="photo-section">
+<img id="profileImage" src="default-avatar.png">
+<input type="file" id="uploadPhoto" accept="image/*">
+</div>
+
+
+<div class="profile-info">
+<label>Full Name</label>
+<input id="p_name" type="text">
+
+
+<label>Email</label>
+<input id="p_email" type="email">
+
+
+<label>Phone</label>
+<input id="p_phone" type="text">
+
+
+<label>Address</label>
+<textarea id="p_address"></textarea>
+
+
+<label>Gender</label>
+<select id="p_gender">
+<option value="">Select</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+
+
+<label>Date of Birth</label>
+<input type="date" id="p_dob">
+
+
+<label>Bio</label>
+<textarea id="p_bio"></textarea>
+
+
+<div class="btn-row">
+<button id="saveProfile" class="primary-btn">Save Changes</button>
+<button id="deleteAccount" class="danger-btn">Delete Account</button>
+</div>
+
+
+<button id="goBack" class="back-btn">← Back</button>
+</div>
+</div>
+
+
+<h3>Your Orders</h3>
+<div id="orderHistory" class="order-list"></div>
+
+
+<h3>Security</h3>
+<div class="security-box">
+<input id="newPass" type="password" placeholder="New Password">
+<button id="changePass" class="primary-btn">Change Password</button>
+</div>
+
+
+<h3>Theme Mode</h3>
+<button id="toggleTheme" class="primary-btn">Toggle Dark Mode</button>
+</div>
+
+
+<script src="profile.js"></script>
+</body>
+</html>
